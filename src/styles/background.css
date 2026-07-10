@@ -1,0 +1,258 @@
+/* ===========================
+   GLOBAL BACKGROUND
+=========================== */
+
+.animated-bg{
+    position:fixed;
+    inset:0;
+    z-index:0;
+    overflow:hidden;
+    pointer-events:none;
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.grid{
+    position:absolute;
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(213,255,1,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(213,255,1,.035) 1px, transparent 1px);
+
+    background-size:60px 60px;
+
+    animation:gridMove 35s linear infinite;
+}
+
+@keyframes gridMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(60px);
+    }
+
+}
+
+/* ===========================
+   AURORA
+=========================== */
+
+.aurora{
+    position:absolute;
+    border-radius:9999px;
+    filter:blur(170px);
+    opacity:.14;
+}
+
+.aurora1{
+
+    width:650px;
+    height:650px;
+
+    background:#D5FF01;
+
+    left:-150px;
+    top:-120px;
+
+    animation:float1 18s ease-in-out infinite;
+}
+
+.aurora2{
+
+    width:600px;
+    height:600px;
+
+    background:#8DA91B;
+
+    right:-180px;
+    top:25%;
+
+    animation:float2 20s ease-in-out infinite;
+}
+
+.aurora3{
+
+    width:800px;
+    height:800px;
+
+    background:#D5FF01;
+
+    left:40%;
+    bottom:-300px;
+
+    animation:float3 24s ease-in-out infinite;
+}
+
+@keyframes float1{
+
+0%,100%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(70px,-50px);
+
+}
+
+}
+
+@keyframes float2{
+
+0%,100%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(-80px,70px);
+
+}
+
+}
+
+@keyframes float3{
+
+0%,100%{
+
+transform:translate(0,0);
+
+}
+
+50%{
+
+transform:translate(40px,-70px);
+
+}
+
+}
+
+/* ===========================
+   PARTICLES
+=========================== */
+
+.particle{
+
+    position:absolute;
+
+    width:3px;
+    height:3px;
+
+    background:#D5FF01;
+
+    border-radius:50%;
+
+    opacity:.45;
+
+    animation:particleFloat linear infinite;
+}
+
+.particle::after{
+
+content:"";
+
+position:absolute;
+
+width:10px;
+height:10px;
+
+left:-3px;
+top:-3px;
+
+border-radius:50%;
+
+background:#D5FF01;
+
+filter:blur(8px);
+
+opacity:.35;
+
+}
+
+@keyframes particleFloat{
+
+0%{
+
+transform:translateY(0);
+
+opacity:.1;
+
+}
+
+50%{
+
+opacity:.5;
+
+}
+
+100%{
+
+transform:translateY(-220px);
+
+opacity:.1;
+
+}
+
+}
+
+/* ===========================
+   CURSOR GLOW
+=========================== */
+
+.cursor-glow{
+
+position:absolute;
+
+width:280px;
+height:280px;
+
+border-radius:50%;
+
+background:radial-gradient(circle,
+rgba(213,255,1,.18) 0%,
+rgba(213,255,1,.08) 35%,
+transparent 75%);
+
+transform:translate(-50%,-50%);
+
+transition:
+left .18s linear,
+top .18s linear;
+
+pointer-events:none;
+
+filter:blur(18px);
+
+}
+
+/* ===========================
+   NOISE
+=========================== */
+
+.animated-bg::after{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+opacity:.04;
+
+mix-blend-mode:screen;
+
+pointer-events:none;
+
+}
