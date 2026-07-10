@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import imgPortrait from "figma:asset/87e8deccb557358e206d631b9e72490c8074b52c.png";
+import imgPortrait from "../../assets/portra.png";
 import svgPaths from "../../imports/Desktop1/svg-g8eqll0k0q";
 import resume from "../../assets/resum.pdf";
 
@@ -106,31 +106,15 @@ export function Hero() {
 
         <div className="relative w-[300px] h-[300px] md:w-[436px] md:h-[426px]">
 
-          {/* Circle Border */}
-          <svg
-            className="absolute inset-0 z-20 w-full h-full"
-            fill="none"
-            viewBox="0 0 436 426"
-          >
-            <ellipse
-              cx="218"
-              cy="212.5"
-              rx="214"
-              ry="208.5"
-              stroke="#86981D"
-              strokeWidth="8"
-            />
-          </svg>
-
           {/* Portrait */}
           <div
             className="
               absolute
               left-1/2
-              top-[8px]
+              top-[-150px]
               -translate-x-1/2
-              w-[400px]
-              h-[400px]
+              w-[1400px]
+              h-[1400px]
               rounded-full
               overflow-hidden
               z-10
@@ -144,8 +128,8 @@ export function Hero() {
                 left-1/2
                 -translate-x-1/2
                 top-[-0px]
-                w-[250px]
-                h-auto
+                w-[350px]
+                h-[500px]
                 scale-x-125
               "
             />

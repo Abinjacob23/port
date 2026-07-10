@@ -6,7 +6,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="relative w-full mt-40 border-t border-[#86981D]/20 overflow-hidden bg-transparent">
+    <footer id="contact" className="relative w-full mt-40 border-t border-[#86981D]/20 overflow-hidden bg-transparent">
 
       {/* Background Glow */}
       <div className="absolute left-1/2 top-20 -translate-x-1/2 w-[500px] h-[500px] bg-[#86981D]/10 blur-[140px] rounded-full pointer-events-none"></div>
@@ -48,6 +48,45 @@ export function Footer() {
           </div>
 
         </div>
+        {/* Contact Section */}
+{/* Contact */}
+<div className="mt-16">
+
+  <div className="flex justify-center mb-8">
+    <div className="w-24 h-[2px] bg-[#86981D]/50 rounded-full"></div>
+  </div>
+
+  <h3 className="font-['Iceland',sans-serif] text-center text-4xl text-white tracking-[6px] uppercase mb-10">
+    Contact
+  </h3>
+
+  <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-12">
+
+    <a
+      href="mailto:abinjacob258@gmail.com"
+      className="font-['Anonymous_Pro',sans-serif] text-gray-300 hover:text-[#D5FF01] transition-colors"
+    >
+      📧 &nbsp;abinjacob258@gmail.com
+    </a>
+
+    <span className="hidden md:block text-[#86981D]/40 text-xl">|</span>
+
+    <a
+      href="tel:+91XXXXXXXXXX"
+      className="font-['Anonymous_Pro',sans-serif] text-gray-300 hover:text-[#D5FF01] transition-colors"
+    >
+      📞 &nbsp;+91 9400956727
+    </a>
+
+    <span className="hidden md:block text-[#86981D]/40 text-xl">|</span>
+
+    <span className="font-['Anonymous_Pro',sans-serif] text-gray-300">
+      📍 &nbsp;Kerala, India
+    </span>
+
+  </div>
+
+</div>
 
         {/* Back To Top */}
         <div className="flex justify-center mt-20">

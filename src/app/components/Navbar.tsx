@@ -62,7 +62,7 @@ export function Navbar() {
         </a>
 
         <a
-          href="mailto:abinjacob258@gmail.com"
+          href="#contact"
           className="font-['Iceland',sans-serif] text-2xl lg:text-3xl text-white hover:text-[#d5ff01] transition-colors"
         >
           CONTACT
