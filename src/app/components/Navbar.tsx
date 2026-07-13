@@ -4,6 +4,7 @@ const NAV_LINKS = [
   { href: "#home", label: "HOME" },
   { href: "#about", label: "ABOUT" },
   { href: "#skills", label: "SKILLS" },
+  { href: "#projects", label: "PROJECTS" },
   { href: "#contact", label: "CONTACT" },
 ];
 
@@ -13,7 +14,7 @@ export function Navbar() {
 
   // Track which section is active, for the underline indicator
   useEffect(() => {
-    const allIds = ["home", "about", "skills", "contact"];
+    const allIds = ["home", "about", "skills", "projects", "contact"];
     const sections = allIds.map((id) => document.getElementById(id)).filter(Boolean);
 
     if (sections.length === 0) return;
