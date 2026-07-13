@@ -330,7 +330,7 @@ export function Footer() {
           </p>
 
           <p className="font-['Anonymous_Pro',sans-serif] text-gray-500 text-sm">
-            Built with React • Tailwind CSS • Vite
+            Built with React • Tailwind CSS • Vite • Figma
           </p>
 
         </div>
