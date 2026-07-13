@@ -1,6 +1,6 @@
 import React from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import imgPortrait from "../../assets/portra.png";
+import imgPortrait from "../../assets/pic.png";
 import svgPaths from "../../imports/Desktop1/svg-g8eqll0k0q";
 import resume from "../../assets/resum.pdf";
 
@@ -129,7 +129,7 @@ export function Hero() {
                 -translate-x-1/2
                 top-[-0px]
                 w-[350px]
-                h-[500px]
+                h-[600px]
                 scale-x-125
               "
             />

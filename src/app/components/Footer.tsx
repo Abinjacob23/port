@@ -6,7 +6,7 @@ export function Footer() {
   };
 
   return (
-    <footer id="contact" className="relative w-full mt-40 border-t border-[#86981D]/20 overflow-hidden bg-transparent">
+    <footer id="contact"className="relative w-full mt-40 border-t border-[#86981D]/20 overflow-hidden bg-transparent">
 
       {/* Background Glow */}
       <div className="absolute left-1/2 top-20 -translate-x-1/2 w-[500px] h-[500px] bg-[#86981D]/10 blur-[140px] rounded-full pointer-events-none"></div>
