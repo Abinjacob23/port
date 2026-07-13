@@ -8,17 +8,17 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-6 md:px-12 lg:px-24 pt-9 pb-16"
+      className="relative w-full min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-6 md:px-12 lg:px-24 pt-9 pb-36 overflow-hidden"
     >
       {/* Left Content */}
       <div className="flex flex-col items-center lg:items-start text-center lg:text-left z-10 w-full lg:w-1/2 mt-12 lg:mt-0">
-        <div className="font-['Iceland',sans-serif] text-6xl md:text-[80px] lg:text-[110px] xl:text-[128px] text-white leading-[0.9] uppercase">
+        <div className="font-['Iceland',sans-serif] text-4xl sm:text-5xl md:text-[80px] lg:text-[110px] xl:text-[128px] text-white leading-[0.95] uppercase">
           <p>HERE</p>
           <p>TECHNOLOGY MEETS PASSION</p>
         </div>
 
-        {/* Social Links */}
-        <div className="flex gap-4 mt-8 md:mt-12">
+        {/* Social Links + Resume */}
+        <div className="flex flex-wrap justify-center lg:justify-start items-center gap-4 mt-8 md:mt-12">
           <a
             href="https://github.com/Abinjacob23"
             target="_blank"
@@ -88,33 +88,35 @@ export function Hero() {
               />
             </svg>
           </a>
+
+          {/* Resume Button */}
+          <a
+            href={resume}
+            download
+            className="bg-[#ff7801] text-black font-['Iceland',sans-serif] text-xl sm:text-2xl md:text-[32px] px-6 sm:px-8 py-3 rounded-full hover:scale-105 hover:bg-[#ff8a20] transition-all duration-300 uppercase whitespace-nowrap"
+          >
+            DOWNLOAD RESUME
+          </a>
         </div>
 
-        {/* Resume Button */}
-        <a
-          href={resume}
-          download
-          className="mt-10 md:mt-12 bg-[#ff7801] text-black font-['Iceland',sans-serif] text-2xl md:text-[32px] px-8 py-3 rounded-full hover:scale-105 hover:bg-[#ff8a20] transition-all duration-300 uppercase"
-        >
-          DOWNLOAD RESUME
-        </a>
       </div>
 
 
       {/* RIGHT SIDE */}
       <div className="relative w-full lg:w-1/2 flex justify-center items-center">
 
-        <div className="relative w-[300px] h-[300px] md:w-[436px] md:h-[426px]">
+        <div className="relative w-[260px] h-[260px] sm:w-[320px] sm:h-[320px] md:w-[436px] md:h-[426px]">
 
           {/* Portrait */}
           <div
             className="
               absolute
               left-1/2
-              top-[-150px]
+              top-1/2
               -translate-x-1/2
-              w-[1400px]
-              h-[1400px]
+              -translate-y-1/2
+              w-[150%]
+              aspect-square
               rounded-full
               overflow-hidden
               z-10
@@ -126,10 +128,10 @@ export function Hero() {
               className="
                 absolute
                 left-1/2
+                top-0
                 -translate-x-1/2
-                top-[-0px]
-                w-[350px]
-                h-[600px]
+                w-[55%]
+                h-[95%]
                 scale-x-125
               "
             />

@@ -2,7 +2,7 @@ import React from "react";
 
 export function About() {
   return (
-    <section id="about" className="w-full flex flex-col lg:flex-row gap-12 lg:gap-24 px-6 md:px-12 lg:px-24 py-20 text-white">
+    <section id="about" className="w-full flex flex-col lg:flex-row gap-12 lg:gap-24 px-6 md:px-12 lg:px-24 pt-2 text-white pb-20">
       {/* Left Column */}
       <div className="flex-1 flex flex-col gap-6">
         <div className="font-['Inter',sans-serif] tracking-[1.6px] text-xl uppercase">
@@ -10,7 +10,7 @@ export function About() {
           <span className="text-white/65">MY NAME IS</span>
         </div>
         
-        <h2 className="font-['Inter',sans-serif] font-semibold text-5xl md:text-6xl tracking-[5px] uppercase">
+        <h2 className="font-['Inter',sans-serif] font-semibold text-4xl sm:text-5xl md:text-6xl tracking-[3px] sm:tracking-[5px] uppercase">
           <span className="text-[#d5ff01]">ABIN</span> JACOB
         </h2>
         

@@ -135,6 +135,19 @@
 
   html {
     font-size: var(--font-size);
+    scroll-behavior: smooth;
+  }
+
+  #home
+  {
+    scroll-margin-top: 60px;
+  }
+  #about{
+    scroll-margin-top: 110px;
+  }
+  #skills,
+  #contact {
+    scroll-margin-top: 10px;
   }
 
   h1 {

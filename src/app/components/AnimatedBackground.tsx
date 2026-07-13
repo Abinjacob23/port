@@ -37,7 +37,7 @@ export function AnimatedBackground() {
       <div className="aurora aurora3"></div>
 
       {/* Grid */}
-      <div className="grid"></div>
+      <div className="bg-grid"></div>
 
       {/* Particles */}
       {particles.map((_, i) => (
