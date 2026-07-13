@@ -24,16 +24,16 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="w-full px-6 md:px-12 lg:px-24 py-20 pb-30 relative z-10 ">
-      <div className="flex flex-col items-start md:items-center mb-16 w-full text-center">
-        <h2 className="font-['Boldonse',sans-serif] text-5xl md:text-[64px] tracking-[1.92px] uppercase">
+    <section id="skills" className="w-full px-6 md:px-12 lg:px-24 py-20 pb-40 relative z-10 mt-50">
+      <div className="w-full text-center mb-16">
+        <h2 className="font-['Boldonse',sans-serif] text-4xl sm:text-5xl md:text-[64px] tracking-[1.2px] sm:tracking-[1.92px] uppercase break-words">
           <span className="text-white drop-shadow-lg">PROFESSIONAL </span>
           <br className="md:hidden" />
           <span className="text-[#d5ff01] drop-shadow-lg">SKILLS</span>
         </h2>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-10 justify-items-center max-w-6xl mx-auto mt-20 ">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-10 justify-items-center max-w-6xl mx-auto mt-30">
         {skills.map((skill, i) => (
           <div key={i} className="bg-white w-full max-w-[189px] aspect-square rounded-[40px] flex flex-col items-center justify-center p-6 shadow-xl hover:-translate-y-2 transition-transform duration-300">
             <div className="h-[70px] flex items-center justify-center mb-4 w-full">
